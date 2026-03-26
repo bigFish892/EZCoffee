@@ -1,0 +1,135 @@
+:root {
+  --bg-color: #111111;
+  --text-color: #ffffff;
+  --accent-color: #f5b400;
+  --accent-dark: #c48a00;
+  --card-bg: #1f1f1f;
+  --focus-outline: #00bcd4;
+  --font-base: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-base);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+header,
+footer {
+  background-color: #000000;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a[aria-current="page"] {
+  text-decoration: underline;
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--accent-dark);
+}
+
+main {
+  padding: 1rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 2rem;
+  background-color: var(--card-bg);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+th,
+td {
+  border: 1px solid #444444;
+  padding: 0.5rem;
+}
+
+th {
+  background-color: #222222;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+button {
+  background-color: var(--accent-color);
+  color: #000000;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--accent-dark);
+}
+
+.center-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; 
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  header,
+  footer {
+    padding: 1rem 2rem;
+  }
+
+  main {
+    padding: 2rem;
+  }
+}
